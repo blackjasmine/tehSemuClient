@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contDash {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../assets/cover.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.conta {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.das {
+    color: white;
+    margin-bottom: 50px;
+    opacity: 95%;
+}
+.pdas {
+    color: white;
+    margin-bottom: 30px;
+    font-size: x-large;
+    opacity: 100%;
+    text-transform: uppercase;
+    opacity: 95%;
+}
+
+.imgCont {
+    margin-bottom: 30px;
+}
+.imgCont img {
+    opacity: 100%;
+}
+
+.form {
+    display: flex;
+    gap: 50px;
+}
+.form .hiddenInput {
+    display: none;
+}
+.form .customFileButton {
+    padding: 3px;
+    background-color: transparent;
+    color: white;
+    font-size: 12px;
+    border-radius: 0.2rem;
+    width: 100px;
+    text-align: center;
+    border: solid 1px white;
+    opacity: 80%;
+}
+.form .buttonDash {
+    border: solid 1px white;
+    border-radius: 0.2rem;
+    background-color: transparent;
+    font-size: 12px;
+    padding: 3px;
+    color: white;
+    width: 100px;
+    text-align: center;
+    opacity: 80%;
+}

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+.contNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 1000;
+}
+
+.navCont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+.navCont::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.navCont > * {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.judul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  padding-left: 4%;
+}
+h3 {
+  color: white;
+}
+
+#box {
+  width: 60%;
+  padding-right: 4%;
+}
+.bux {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+.log1n {
+  width: 60px;
+  height: 25px;
+  border-radius: 0.3rem;
+  background-color: gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 92%;
+}
+.log1n a {
+  color: black;
+}
+
+.icon {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  
+  /* .judul::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  .judul > * {
+    position: relative;
+    z-index: 2;
+    color: white;
+  } */
+  
+  .navCont {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .navCont div.box {
+    display: none;
+  }
+  
+  .bux {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  li a {
+    text-decoration: none;
+  }
+
+  #box {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    margin-top: -50px;
+    padding-top: 50px;
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+
+  /* #box::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  #box > * {
+    position: relative;
+    z-index: 2;
+    color: white;
+  } */
+  
+  .icon {
+    display: block;
+    padding-right: 4%;
+  }
+}

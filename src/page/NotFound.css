@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.NotCont {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: black;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: x-large;
+    }
+}
