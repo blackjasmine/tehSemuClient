@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import Nav from '../nav/Nav.jsx';
 import "./RegisterForm.css";
+const API = import.meta.env.VITE_API_URL;
 
 function registerForm() {
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ function registerForm() {
     const data = { email, nama, password};
 
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/register", data);
+      const res = await axios.post(`${API}/api/auth/register`, data);
       alert(res.data.message || "Data berhasil dikirim ke server!");
     } catch (err) {
       console.error("Gagal kirim data:", err);

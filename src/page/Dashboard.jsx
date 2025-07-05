@@ -3,6 +3,7 @@ import axios from "axios";
 import { AuthContext } from "../Context/AuthContext";
 import "./Dashboard.css";
 import Nav from '../nav/Nav.jsx';
+const API = import.meta.env.VITE_API_URL;
 
 
 const Dashboard = () => {
@@ -30,7 +31,7 @@ const Dashboard = () => {
     formData.append('profile', file);
 
     try {
-      const res = await axios.post('http://localhost:3000/api/user/upload-profile', formData, {
+      const res = await axios.post(`${API}/api/user/upload-profile`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${localStorage.getItem('token')}`,
@@ -42,6 +43,7 @@ const Dashboard = () => {
       setPreview(null);
     } catch (err) {
       console.error('Upload gagal', err);
+      alert('Upload gagal, harap coba lagi.');
     } finally {
       setLoading(false);
     }

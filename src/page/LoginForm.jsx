@@ -3,6 +3,7 @@ import { AuthContext } from "../Context/AuthContext.jsx";
 import axios from "axios";
 import Nav from '../nav/Nav.jsx';
 import "./LoginForm.css";
+const API = import.meta.env.VITE_API_URL;
 
 function loginForm() {
   const [email, setEmail] = useState("");
@@ -20,7 +21,7 @@ function loginForm() {
     const data = { email, password};
 
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/login", data);
+      const res = await axios.post(`${API}/api/auth/login`, data);
       const { token, user } = res.data;
       login(user, token);
       alert(res.data.message || "berhasil login!");
