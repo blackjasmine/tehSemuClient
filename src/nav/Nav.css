@@ -113,7 +113,7 @@ a {
     width: 100%;
   }
   .judul {
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
     max-width: 50%;
   }
@@ -174,7 +174,7 @@ a {
   .icon {
     display: block;
     padding-right: 4%;
-    overflow: hidden;
+    overflow-x: hidden;
     box-sizing: border-box;
     max-width: 50%;
   }
