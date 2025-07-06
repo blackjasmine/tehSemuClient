@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     background-image: url('../assets/cover.jpg');
-/*     background-size: cover; */
+    background-size: cover;
     overflow-x: hidden;
     background-position: center;
 
