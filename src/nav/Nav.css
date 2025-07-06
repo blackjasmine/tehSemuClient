@@ -108,7 +108,7 @@ a {
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow-x: hidden;
     flex-wrap: wrap;
     width: 100%;
   }
